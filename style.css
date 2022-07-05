@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 90%;
+    margin: auto;
+}
+.content-box{
+    background-color: hsl(0, 0%, 100%);
+}
+.spaced-text{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.content-box h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.content-box p{
+    padding: 10px 0;
+    font-size: 14px;
+    color: grey;
+}
+.numbers ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.numbers ul :nth-child(1){
+    color:  hsl(158, 36%, 37%);
+    margin-right: 20px;
+    font-weight: 700;
+}
+.numbers ul :nth-child(2){
+    text-decoration: line-through;
+    color: grey;
+}
+button{
+    width: 100%;
+    background-color:  hsl(158, 36%, 37%);
+    border: none;
+    padding: 12px 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button img{
+  margin-right: 10px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width: 1440px) and (min-width: 376px){
+    body{
+        margin-top: 20vh;
+    }
+    .box{
+        display: flex;
+        width: 40%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .moblie-image{
+        display: none;
+    }
+    .desktop-image{
+        height: 60vh;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .content-box{
+        height: 60vh;
+        padding: 20px ;
+        display: flex;
+        flex-direction: column;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+@media screen and (max-width: 375px){
+    body{
+        margin-top: 10%;
+    }
+    .box{
+        width: 90%;
+        margin: auto;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    } 
+    .desktop-image{
+        display: none;
+    }
+    .content-box{
+        overflow: auto;
+        padding: 15px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
