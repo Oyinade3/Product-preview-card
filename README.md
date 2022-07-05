@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Oyinade3/Product-preview-card)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://oyinade3.github.io/Product-preview-card/)
 
 ### Built with
 
